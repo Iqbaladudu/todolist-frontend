@@ -5,7 +5,7 @@ export const getTodo = async (id: string): Promise<AxiosResponse<GetTodoResult>>
     try {
         const res = await axios({
             method: 'GET',
-            url: `http://localhost:8080/api/todo/${id}`
+            url: `https://iqbaladudu-todo-list.herokuapp.com/api/todo/${id}`
         })
 
         return res

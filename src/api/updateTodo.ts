@@ -17,7 +17,7 @@ export const updateTodo = async (id: string): Promise<void> => {
 
             await axios({
                 method: 'PUT',
-                url: `http://localhost:8080/api/update-todo/${id}`,
+                url: `https://iqbaladudu-todo-list.herokuapp.com/api/${id}`,
                 data: body
             })
         }

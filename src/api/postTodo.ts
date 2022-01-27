@@ -5,7 +5,7 @@ export const postTodo = async (data: TodoBody): Promise<void> => {
     try {
         await axios({
             method: 'POST',
-            url: 'http://localhost:8080/api/add-todo',
+            url: 'https://iqbaladudu-todo-list.herokuapp.com/api/add-todo',
             data
         })
     } catch (error) {
